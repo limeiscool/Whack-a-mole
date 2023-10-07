@@ -29,6 +29,12 @@ square.forEach(id => {
       score.textContent = result
     }
   })
+  id.addEventListener('touchstart', () => {
+    if (id.id === hitPosition) {
+      result += 1
+      score.textContent = result
+    }
+  })
 })
 
 function moveMole() {
