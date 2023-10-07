@@ -38,7 +38,7 @@ square.forEach(id => {
 })
 
 function moveMole() {
-  moleID = setInterval(randomSquare, 500)
+  moleID = setInterval(randomSquare, 450)
 }
 
 
