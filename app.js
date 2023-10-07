@@ -23,7 +23,7 @@ function randomSquare() {
 }
 
 square.forEach(id => {
-  id.addEventListener('mouseup', () => {
+  id.addEventListener('mousedown', () => {
     if (id.id === hitPosition) {
       result += 1
       score.textContent = result
@@ -32,7 +32,7 @@ square.forEach(id => {
 })
 
 function moveMole() {
-  moleID = setInterval(randomSquare, 450)
+  moleID = setInterval(randomSquare, 500)
 }
 
 
